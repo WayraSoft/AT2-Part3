@@ -14,9 +14,21 @@ let anotherString = "   Another string";
 let hello = "Hello there!";
 let myName = "Carlos";
 
+// console.log(myString);
+// console.log(anotherString);
+// console.log(hello);
+// console.log(myName);
+
+
+// Q3.2 Perform three operations and print them in the console.
+// Find out the length of myString:
+console.log(`The length of the string "myString" is ${myString.length} characters.`)
+
+// Find out the first character of myString:
+let firstChar = myString.at(0);
 console.log(myString);
-console.log(anotherString);
-console.log(hello);
-console.log(myName);
+console.log(`The first character is: ${firstChar}`);
 
-
+// Find out the 11th character of myString:
+let elevenChar = myString.charAt(10);
+console.log(`The 11th character is: ${elevenChar}`);
