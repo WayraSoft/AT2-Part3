@@ -32,3 +32,10 @@ console.log(`The first character is: ${firstChar}`);
 // Find out the 11th character of myString:
 let elevenChar = myString.charAt(10);
 console.log(`The 11th character is: ${elevenChar}`);
+
+
+// Q3.3 Use the functions slice and substring to create new strings
+// Slice "is a" from myString:
+let partSlice = myString.slice(5, 10);
+console.log(`Sliced part: " ${partSlice} "`);
+
