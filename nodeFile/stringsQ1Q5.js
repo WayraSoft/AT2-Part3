@@ -39,3 +39,6 @@ console.log(`The 11th character is: ${elevenChar}`);
 let partSlice = myString.slice(5, 10);
 console.log(`Sliced part: " ${partSlice} "`);
 
+// Substring to get "the" from anotherString"
+let partSlice2 = anotherString.substring(6, 9);
+console.log(`Sliced part: " ${partSlice2} "`);
