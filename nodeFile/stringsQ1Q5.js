@@ -42,3 +42,13 @@ console.log(`Sliced part: " ${partSlice} "`);
 // Substring to get "the" from anotherString"
 let partSlice2 = anotherString.substring(6, 9);
 console.log(`Sliced part: " ${partSlice2} "`);
+
+
+// Q3.4 Change the case of the myName string.
+// Change myName string to upper case
+let myNameUp = myName.toUpperCase();
+console.log(`My name to Upper Case: ${myNameUp}`);
+
+// Change myName string to lower case
+let myNameLo = myName.toLowerCase();
+console.log(`My name to Upper Case: ${myNameLo}`);
