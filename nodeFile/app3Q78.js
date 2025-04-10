@@ -8,31 +8,45 @@
 // Require the file system module.
 const fs = require('node:fs');
 // Require the readline module.
-const readline = require('readline');
+// const readline = require('readline');
 
-// Define an empty string.
-let userText = '';
-// Create a readline interface to read from terminal.
-const rdln = readline.createInterface({
-  input: process.stdin,
-  output: process.stdout
-});
+// // Define an empty string.
+// let userText = '';
+// // Create a readline interface to read from terminal.
+// const rdln = readline.createInterface({
+//   input: process.stdin,
+//   output: process.stdout
+// });
 
-// Enter the text and show it in console and assign it to the string.
-rdln.question('Enter the text: ', function(input) {
-  userText = input;
-  console.log(`Text entered: ${userText}`);
-  rdln.close();
+// // Enter the text and show it in console and assign it to the string.
+// rdln.question('Enter the text: ', function(input) {
+//   userText = input;
+//   console.log(`Text entered: ${userText}`);
+//   rdln.close();
 
-  // Save the string into a file and check for errors
-  console.log(">>> Writing to file >>>");
-  fs.writeFile(`output.txt`, userText, (err) => {
-    if (err) {
-      console.error(err);
-    }
-    else {
-      // Log that the file was written successfully.
-      console.log("The file was written successfully")
-    }
-  });
+//   // Save the string into a file and check for errors
+//   console.log(">>> Writing to file >>>");
+//   fs.writeFile(`output.txt`, userText, (err) => {
+//     if (err) {
+//       console.error(err);
+//     }
+//     else {
+//       // Log that the file was written successfully.
+//       console.log("The file was written successfully")
+//     }
+//   });
+// });
+
+// Read the content of the text file:
+// Print a message.
+console.log("Reading the content from a file");
+// Use file system to read a file and check for errors.
+fs.readFile(`output.txt`, (err, fileText) => {
+  if (err) {
+    console.error(err);
+    return;
+  }
+  // display the content if no error.
+  console.log("The file contents are: ");
+  console.log(fileText.toString());
 });
