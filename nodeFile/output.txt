@@ -1,1 +1,1 @@
-this is a test
+This is the string to be written to the file output.txt
