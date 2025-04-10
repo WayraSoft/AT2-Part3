@@ -42,10 +42,6 @@ You should start a new repository for this part.
 8.	Read text from a text file
 •	Get the file name output.txt
 •	Read in the text file
-•	Prin the text that was read in, to the screen.
-Submit for review
-You are required to submit the following for review
-1.	This assessment document with all questions answered
-2.	All source code files
-You are required to compress all files should in a zip file and submit the zip file for review.
+•	Print the text that was read in, to the screen.
+
 
