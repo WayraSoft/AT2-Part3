@@ -3,7 +3,7 @@ This file shows an pseudo code for file handling.
 Author: Carlos
 Date: 10/04/2025
 
---- Save a string to a file text ---
+--- Save a string to a text file ---
 1. Import the file system module
 2. Import the readline module to allow terminal input
 3. Declare an empty string
